@@ -13,8 +13,6 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setWindowModality(QtCore.Qt.ApplicationModal)
         MainWindow.resize(335, 473)
-        #在这里改变窗口标题
-        MainWindow.setWindowTitle("食堂点餐系统")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.login = QtWidgets.QPushButton(self.centralwidget)
@@ -70,7 +68,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))#改变窗口标题
         self.login.setText(_translate("MainWindow", "登录"))
         self.id_p.setText(_translate("MainWindow", "用户名："))
         self.passw.setText(_translate("MainWindow", "密码："))
